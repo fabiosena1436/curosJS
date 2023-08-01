@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Nacionalidade</h1>
+    qual seu pais? <input type="text" name="local" id="local" />
+    <input type="button" value="Verificar" onclick="calcular()" />
+    <div id="res"></div>
+
+    <script>
+      function caucular () {
+        var pais = window.document.querySelector('input#local')
+        var res = window.document.querySelector(' div#res')
+        res.innerHTML = (`Seu pais atual é ${pais}`)
+        if ( pais == USD ) {
+            res.innerHTML += (`Voce é estrangeiro`)
+        }else 
+        res.innerHTML += (`<p>Voce é brasileiro</p>`)
+      }
+    </script>
+  </body>
+</html>
